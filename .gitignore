@@ -79,24 +79,17 @@ typings/
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 
-# Gradle:
-.idea/**/gradle.xml
-.idea/**/libraries
-
-# CMake
-cmake-build-debug/
-cmake-build-release/
-
-# Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
 
 ## File-based project format:
 *.iws
+
 
 ## Plugin-specific files:
 
 # IntelliJ
 out/
+*.iml
+*.idea
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
