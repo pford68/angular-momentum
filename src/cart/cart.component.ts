@@ -3,7 +3,7 @@
  */
 
 'use strict';
-import {Component, Input} from "@angular/core";
+import {Component, Input} from '@angular/core';
 import { CartService } from './cart.service'
 
 
