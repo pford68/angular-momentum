@@ -1,14 +1,14 @@
-'use strict'; // necessary for es6 output in node
+import { AppPage } from './app.po';
 
-import { browser, element, by } from 'protractor';
+describe('angular-template App', () => {
+  let page: AppPage;
 
-describe('cli-quickstart App', () => {
   beforeEach(() => {
-    return browser.get('/');
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
-    let pageTitle = element(by.css('app-root h1')).getText();
-    expect(pageTitle).toEqual('Welcome to My First Angular App!!');
+  it('should display welcome message', () => {
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
